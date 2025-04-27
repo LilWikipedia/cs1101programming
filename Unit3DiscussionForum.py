@@ -1,4 +1,4 @@
-import random
+import random #ill use this to grab a random number to test my script
 
 #First I will declare some variables to compare for my conditionals
 MyWinStreak = random.randint(0,3) #random number between 0 and 3
@@ -30,7 +30,7 @@ def CheckWinsViaNestedConditional(MyWinStreak):
             else:
                 print("You lost your last game")
 
-#Now I will call both versions
+#Now I will call both functions
 print("Chained conditional test:")       
 CheckWinsViaChainedConditional(MyWinStreak)
 print("Nested conditional test:")
