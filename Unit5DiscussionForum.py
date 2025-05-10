@@ -41,8 +41,19 @@ def any_lowercase4(s):
 # indicating whether any lowercase character was encountered. This is the correct function.
 
 #5
+def any_lowercase5(s):
+    for c in s:
+        if not c.islower():
+            return False
+    return True
+# this function iterates through the input string, it checks if the current character c is not lowercase (not c.islower()). If it finds even
+# one character that is not lowercase, it immediately returns False. If the loop completes without finding any non-lowercase characters, it 
+# means all characters must be lowercase (or the string was empty), and it returns True after the loop. This logic checks if all characters are lowercase.
+# This function does not correctly check if the string has any lowercase letters. It checks if all characters are lowercase.
+
 
 s="UnitFive"
+
 print(any_lowercase1(s))
 print(any_lowercase2(s))
 print(any_lowercase3(s))
